@@ -39,6 +39,9 @@ public class Player extends Actor
         vel += gravity;
         
         if (Greenfoot.isKeyDown("LEFT")) {
+            if(velX > 0) {
+                velX = 0;
+            }
             velX -= speed;
             left = true;
             if (velX <= -maxVelX) {
@@ -51,6 +54,9 @@ public class Player extends Actor
                 left = false;
         }
         if (Greenfoot.isKeyDown("RIGHT")) {
+            if(velX < 0) {
+                velX = 0;
+            }
             velX += speed;
             right = true;
             if (velX >= maxVelX) {
