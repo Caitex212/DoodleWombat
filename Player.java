@@ -39,6 +39,7 @@ public class Player extends Actor
         vel += gravity;
         
         if (Greenfoot.isKeyDown("LEFT")) {
+            setImage("wombatleft.png");
             if(velX > 0) {
                 velX = 0;
             }
@@ -54,6 +55,7 @@ public class Player extends Actor
                 left = false;
         }
         if (Greenfoot.isKeyDown("RIGHT")) {
+            setImage("wombat.png");
             if(velX < 0) {
                 velX = 0;
             }
