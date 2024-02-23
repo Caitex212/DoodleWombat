@@ -7,7 +7,7 @@ public class Player extends Actor
     public int vel = 0;
     public int score = 0;
     
-    public int maxVelX = 10;
+    public int maxVelX = 30;
     public int minVelX = 4;
     public int velX = 0;
     private int speed = 1;

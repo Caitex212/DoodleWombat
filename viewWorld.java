@@ -8,6 +8,7 @@ public class viewWorld extends World
     private int tempOffset = 0;
     public Actor player = new Player();
     public Actor floor = new Floor();
+    public boolean isdeath = false;
     
     public viewWorld()
     {    
@@ -33,6 +34,9 @@ public class viewWorld extends World
     }
     
     public void generateDeath() {
-        addObject(new deathscreen(), 250, 400);
+        if(!isdeath){
+            isdeath = true;
+            addObject(new deathscreen(), 250, 400);
+        }
     }
 }
