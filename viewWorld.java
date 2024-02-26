@@ -28,7 +28,7 @@ public class viewWorld extends World
         addObject(platform, random, 10);
         int random2 = (int)(Math.random() * 500);
         Actor cloud = new cloud();
-        addObject(cloud, random2, 0);
+        //addObject(cloud, random2, 0);
         setPaintOrder(deathscreen.class, Floor.class, Player.class, Platform.class, Platform2.class, cloud.class);
     }  
     

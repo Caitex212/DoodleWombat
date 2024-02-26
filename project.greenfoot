@@ -1,7 +1,7 @@
 #Greenfoot project file
 class.Floor.image=house-03.png
-class.Platform.image=balloon1.png
-class.Platform2.image=balloon1.png
+class.Platform.image=cartoon-comic-cloud-png.png
+class.Platform2.image=cartoon-comic-cloud-png.png
 class.Player.image=wombat.png
 class.cloud.image=cartoon-comic-cloud-png.png
 class.deathscreen.image=you-died.png
