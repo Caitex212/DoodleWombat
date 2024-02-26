@@ -15,7 +15,7 @@ public class viewWorld extends World
         super(500, 800, 1); 
         addObject(player, 250, 725);
         addObject(floor, 250, 782);
-        setBackground(new GreenfootImage("sky.png"));
+        setBackground(new GreenfootImage("sky2.png"));
         
         for(int i=0; i <= 8; i++) {
             int random = (int)(Math.random() * 500);
