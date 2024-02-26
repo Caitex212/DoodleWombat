@@ -5,6 +5,7 @@ public class Player extends Actor
     private double gravity = 2;
     private int maxVel = 15;
     public int vel = 0;
+    private int lastVel = 0;
     public int score = 0;
     
     public int maxVelX = 30;
@@ -36,7 +37,10 @@ public class Player extends Actor
                 if(vel < 0) {
                     ((viewWorld) getWorld()).offset = vel*-1;
                     ((viewWorld) getWorld()).showText("Score: " + score, 100, 780);
-                    score += vel*(-1);
+                    if (lastVel != vel) {
+                        score += vel*(-1);
+                    }
+                    lastVel = vel;
                 }
             }
             vel += gravity;
