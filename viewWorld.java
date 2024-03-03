@@ -37,10 +37,7 @@ public class viewWorld extends World
         int random = (int)(Math.random() * 500);
         Actor platform = new Platform();
         addObject(platform, random, 10);
-        int random2 = (int)(Math.random() * 500);
-        Actor cloud = new cloud();
-        //addObject(cloud, random2, 0);
-        setPaintOrder(deathscreen.class, Floor.class, Player.class, Platform.class, Platform2.class, cloud.class);
+        setPaintOrder(deathscreen.class, Floor.class, Player.class, Platform.class, Platform2.class);
     }  
     
     public void act() {
@@ -58,12 +55,6 @@ public class viewWorld extends World
         int random = (int)(Math.random() * 500);
         Actor platform = new Platform();
         addObject(platform, random, 0);
-    }
-
-    public void generateCloud() {
-        int random = (int)(Math.random() * 500);
-        Actor cloud = new cloud();
-        addObject(cloud, random, 0);
     }
     
     public void generateDeath() {
